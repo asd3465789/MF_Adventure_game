@@ -58,7 +58,7 @@ Enemy.prototype.move = function() {
     if (this.position.y - p_y > this.collisionRadius) dy = -.01;
     else if (this.position.y - p_y < -this.collisionRadius) dy = .01;
     else dy = 0;
-
+/*
     let xCollisionRadius = (dx > 0) ? this.collisionRadius : -1 * this.collisionRadius;
     let yCollisionRadius = (dy > 0) ? this.collisionRadius : -1 * this.collisionRadius;
 
@@ -68,7 +68,7 @@ Enemy.prototype.move = function() {
     if (map.wallGrid[Math.floor(this.position.x)][Math.floor(this.position.y + dy + yCollisionRadius)] > 0) {
         dy = 0;
     }
-
+*/
     this.position.x += dx;
     this.position.y += dy;
 
